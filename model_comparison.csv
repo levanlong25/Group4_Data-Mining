@@ -1,0 +1,4 @@
+Mô hình,Tham số tốt nhất,F1-Score (Macro)
+Random Forest,"{'max_depth': None, 'n_estimators': 50}",0.9893
+SVM,"{'C': 0.1, 'kernel': 'linear'}",0.9834
+KNN,"{'n_neighbors': 5, 'weights': 'uniform'}",0.9729
