@@ -29,10 +29,10 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-df_excel = pd.read_excel("D00 - wine.data.xlsx")
+df_excel = pd.read_excel("D00 - wine.data.xlsx", sheet_name="wine.data")
 df_excel.to_csv("wine_data.csv", index=False)
 
-df = pd.read_excel("D00 - wine.data.xlsx", sheet_name="wine.data")
+df = pd.read_csv("wine_data.csv")
 # Làm sạch tên cột để bỏ khoảng trắng thừa
 df.columns = [str(c).strip() for c in df.columns]
 
